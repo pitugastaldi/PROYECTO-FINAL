@@ -31,8 +31,16 @@ header{
 }
 
 main{
-    margin-top: 10rem;
+    margin-top: 12.5rem;
     padding: 1.25rem;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    background: linear-gradient(to right, #ece9e6, #ffffff); /* Fondo degradado suave */
+    color: #333; /* Color de texto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Altura mínima para cubrir toda la pantalla */
 }
 .iconoshead{
 display: flex;
