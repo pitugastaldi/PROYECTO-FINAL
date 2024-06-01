@@ -34,6 +34,25 @@ main{
     margin-top: 10rem;
     padding: 1.25rem;
 }
+.iconoshead{
+display: flex;
+flex-direction: row;
+align-content: flex-start;
+
+
+}
+.iconoshead img {
+    width: 20px; /* Ajusta el ancho de los iconos */
+    height: 20px; /* Ajusta la altura de los iconos */
+}
+
+/* Opcional: Ajustar los botones para que se adapten al tamaño de las imágenes */
+.iconoshead button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 
 
 .napa{
