@@ -251,23 +251,33 @@ list-style: none;
     gap: 1.25rem;
 }
 
-.comprasbody{
+.comprasbody {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
+    align-items: center;
 }
 
-.compras1{
+.compras1, .compras2, .compras3 {
     display: flex;
-   
+    align-items: center;
+    margin-bottom: 1rem; /* Añade un margen inferior para separar las secciones */
+  
 }
-.compras2{
-    display: flex;
+
+.compras1 button, .compras2 button, .compras3 button {
+    align-items: center;
+    width: 6.25rem;
+    height: 2.5rem;
+    font-size: medium;
+    text-align: center;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin-left: 5rem; /* Añade un margen izquierdo para separar el botón de la imagen */
+  
 }
-.compras3{
-    display: flex;
-}
+
 
 
 .historiabody{
