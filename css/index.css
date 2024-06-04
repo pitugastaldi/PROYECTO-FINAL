@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-html{
+/* html{
     background-color: rgb(76, 184, 144);
-}
+} */
 
 h1{
     font-size: x-large;
@@ -27,10 +27,11 @@ header{
     z-index: 1000;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: rgb(81, 134, 117);
 }
 
 main{
-    margin-top: 12.5rem;
+    margin-top: 3.75rem;
     padding: 1.25rem;
     font-family: 'Roboto', sans-serif; 
     background: linear-gradient(to right, #ece9e6, #ffffff); 
@@ -152,9 +153,6 @@ a{
 }
 
 
-
-
-
 .rectangulo a {
     margin: 0 10px;
     text-decoration: none;
@@ -191,11 +189,7 @@ list-style: none;
     flex-direction: row;
     justify-content: center;
 }
-.rectangulo a {
 
-    color: rgb(0, 0, 5);
-    text-decoration: none;
-}
 .rectangulo a:hover {
     color: rgb(0, 0, 8);
     font-weight: bold;
@@ -274,12 +268,15 @@ list-style: none;
     display: flex;
 }
 
-.historiabody{
 
+.historiabody{
     display: flex;
     flex-direction: column;
     gap:20px;
+    justify-content: center;
 }
+
+
 
 .bodyproduc{
     display: flex;
