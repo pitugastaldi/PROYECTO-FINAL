@@ -118,6 +118,57 @@ footer {
     cursor: pointer; /* Cambiar cursor a pointer */
 }
 
+/* Estilo base para el título */
+.tituloindex {
+    font-family: 'Teko', sans-serif; /* Cambia la tipografía según tu preferencia */
+    font-size: 3rem; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    text-align: center; /* Alinear el texto al centro */
+    position: relative; 
+    margin-bottom: 1rem; /* Espacio inferior */
+    text-transform: uppercase; /* Convertir el texto a mayúsculas */
+    letter-spacing: 0.1rem; /* Espaciado entre letras */
+    transition: color 0.3s, transform 0.3s; /* Transición para efectos de hover y focus */
+}
+
+/* Pseudoelemento ::before */
+.tituloindex::before {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Ajusta la posición según sea necesario */
+    left: 50%;
+    width: 50%;
+    height: 4px; /* Grosor de la línea */
+    background-color: #812814; /* Color de la línea */
+    transform: translateX(-50%); /* Centrar la línea */
+    transition: background-color 0.3s; /* Transición para el color de la línea */
+}
+
+/* Pseudoelemento ::after */
+.tituloindex::after {
+   
+    position: absolute;
+    top: -1.5rem; /* Ajusta la posición según sea necesario */
+    right: -1.5rem; /* Ajusta la posición según sea necesario */
+    font-size: 1.5rem; /* Tamaño del icono */
+    color: #942d16; /* Color del icono */
+    
+}
+
+/* Pseudoclase :hover */
+.tituloindex:hover {
+    color: #942d16; /* Cambia el color del texto al pasar el cursor */
+    transform: scale(1.05); /* Escala el título ligeramente */
+}
+
+/* Pseudoclase :focus */
+.tituloindex:focus {
+    outline: none; /* Quita el contorno de enfoque por defecto */
+    color: #942d16; /* Cambia el color del texto al enfocar */
+    transform: scale(1.05); /* Escala el título ligeramente */
+}
+
+
 
 .PartePrincipal {
     padding-top: 1.25rem;
@@ -135,6 +186,9 @@ footer {
     align-content: center;
     justify-content: center;
 }
+
+
+
 
 .imagenBody {
     grid-area: imagenBody;
@@ -363,11 +417,7 @@ list-style: none;
    
 }
 
-@media(max-width: 1024px){
-    
-   
-    }
-    
+  
 @media(max-width:768px) and (orientation:landscape){
    
 
@@ -421,3 +471,45 @@ list-style: none;
         padding: 1.25rem;
                
     }
+}
+
+@media (max-width:320px){
+    
+
+    .rectangulo {
+        width: 100%;
+        height: 50%;
+        background-color: rgb(130,184,89);
+        border: 2px solid rgb(0, 0, 5);
+        text-align: center;
+        font-family: "Teko", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style:small;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .rectangulo a:hover {
+        color: rgb(0, 0, 8);
+        font-weight: bold;
+    }
+    
+    .rectangulo button{
+        font-family: "Teko", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        background-color: red;
+    }
+
+    .iconoshead{
+        display: none;
+       
+        
+        
+        }
+
+
+}
