@@ -84,7 +84,14 @@ a{
     padding-right: .625rem;
 }
 
+.iconoshead {
+    display: flex;
+    gap: 1rem;
+}
 
+.iconoshead button img {
+    width: 20px; /* Ajusta el tamaño de los íconos */
+}
 
 
 footer {
@@ -107,6 +114,11 @@ footer {
     margin-bottom: 0.5rem; /* Espacio debajo del texto */
 }
 
+.redes div {
+    display: flex;
+    justify-content: center;
+}
+
 .redes img {
     width: 2rem; /* Tamaño de los íconos */
     margin: 0 0.5rem; /* Espacio entre los íconos */
@@ -117,6 +129,7 @@ footer {
     transform: scale(1.1); /* Agrandar íconos al pasar el ratón */
     cursor: pointer; /* Cambiar cursor a pointer */
 }
+
 
 /* Estilo base para el título */
 .tituloindex {
