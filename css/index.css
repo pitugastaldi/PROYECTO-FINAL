@@ -85,10 +85,37 @@ a{
 }
 
 
-.redes{
-    padding-top: 1.25rem;
+
+
+footer {
+    background-color: #f8f8f8; 
+    padding: 1.25rem 0; /* Espaciado vertical */
+    text-align: center; /* Centrar texto en dispositivos móviles */
+}
+
+.redes {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column; /* Cambia a columna para dispositivos móviles */
+    align-items: center;
+    justify-content: center;
+}
+
+.redes p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333; /* Color del texto */
+    margin-bottom: 0.5rem; /* Espacio debajo del texto */
+}
+
+.redes img {
+    width: 2rem; /* Tamaño de los íconos */
+    margin: 0 0.5rem; /* Espacio entre los íconos */
+    transition: transform 0.3s; /* Transición para efectos hover */
+}
+
+.redes img:hover {
+    transform: scale(1.1); /* Agrandar íconos al pasar el ratón */
+    cursor: pointer; /* Cambiar cursor a pointer */
 }
 
 
@@ -253,7 +280,7 @@ list-style: none;
 .compras1, .compras2, .compras3 {
     display: flex;
     align-items: center;
-    margin-bottom: 1rem; /* Añade un margen inferior para separar las secciones */
+    margin-bottom: 1rem; 
 }
 
 .compras1 div, .compras2 div, .compras3 div {
@@ -270,7 +297,7 @@ list-style: none;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    margin-left: 10rem; /* Ajusta el margen izquierdo para separar el botón de la imagen */
+    margin-left: 10rem; 
 }
 
 
