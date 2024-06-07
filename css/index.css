@@ -70,6 +70,7 @@ a {
 
 .navbar-nav {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     gap: .625rem;
     font-family: "Teko", sans-serif;
@@ -78,20 +79,10 @@ a {
     font-style: normal;
     
 }
-.navbar-nav .nav-link img {
-    width: 2rem;
-    transition: transform 0.3s;
-}
-
-.navbar-nav .nav-link img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.nav-link{
+#navbarNav{
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-end;
+    gap: .3125rem;
 }
 
 
