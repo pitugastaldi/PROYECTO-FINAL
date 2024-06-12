@@ -411,15 +411,26 @@ list-style: none;
    
 }
 
+.container{
+    width: 31.25rem;
+    height: 31.25rem;
+}
+
   
 @media(max-width:768px) and (orientation:landscape){
-   
+    
+    .containerhistorias{
+        display: none;
+    }
 
     }
         
 @media(max-width:425px){
     
-    header{
+    .containerhistorias{
+        display: none;
+    }
+        header{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -479,7 +490,9 @@ list-style: none;
         display: none;
     }
 
-
+    .containerhistorias{
+        display: none;
+    }
 
     .napa{
         display: flex;
