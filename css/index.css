@@ -416,6 +416,12 @@ list-style: none;
     height: 31.25rem;
 }
 
+.containerhistorias{
+    width: 25.5rem;
+    height: 25.5rem;
+    margin-left: 40rem;
+    }
+
   
 @media(max-width:768px) and (orientation:landscape){
     
