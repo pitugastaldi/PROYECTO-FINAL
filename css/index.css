@@ -289,7 +289,7 @@ list-style: none;
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    margin-top: 1.25rem; 
+    margin-top: 20px; 
 }
 .item1{
     display: flex;
@@ -323,6 +323,7 @@ list-style: none;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .compras1, .compras2, .compras3 {
@@ -419,7 +420,8 @@ list-style: none;
 .containerhistorias{
     width: 25.5rem;
     height: 25.5rem;
-    margin-left: 40rem;
+    /* margin-left: 40rem; */
+   
     }
 
   
