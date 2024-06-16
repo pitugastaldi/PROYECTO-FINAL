@@ -85,45 +85,6 @@ a {
     gap: .3125rem;
 }
 
-
-
-footer {
-    background-color: #f8f8f8; 
-    padding: 1.25rem 0; 
-    text-align: center; 
-}
-
-.redes {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-}
-
-.redes p {
-    margin: 0;
-    font-size: 1rem;
-    color: #333; 
-    margin-bottom: 0.5rem; 
-}
-
-.redes div {
-    display: flex;
-    justify-content: center;
-}
-
-.redes img {
-    width: 2rem; 
-    margin: 0 0.5rem; 
-    transition: transform 0.3s; 
-}
-
-.redes img:hover {
-    transform: scale(1.1); 
-    cursor: pointer; 
-}
-
-
 /* Estilo base para el título */
 .tituloindex {
     font-family: 'Teko', sans-serif; /* Cambia la tipografía según tu preferencia */
@@ -278,6 +239,10 @@ list-style: none;
 
 }
 
+.containeraceites{
+    gap: 5px;
+}
+
 .bodyaceites{
     display:flex;
     flex-direction: column;
@@ -411,11 +376,11 @@ list-style: none;
    padding-top: 1.25rem;
    
 }
-
+/* 
 .container{
     width: 31.25rem;
     height: 31.25rem;
-}
+} */
 
 .containerhistorias{
     width: 25.5rem;
@@ -492,6 +457,9 @@ list-style: none;
         width: 5.25rem;
         height: 1.5rem;
         margin-left: 5rem; 
+    }
+    .rectangulo1{
+        display: none;
     }
 
     .rectangulo{
