@@ -72,6 +72,7 @@ a {
 .form-control,
 .btn-outline-success {
   color: black !important;
+  font-family: $dark-color;
 }
 
 
@@ -362,9 +363,6 @@ a {
         display: none;
     }
 
-    .napa {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+    
+    
 }

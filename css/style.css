@@ -54,6 +54,7 @@ a {
 .form-control,
 .btn-outline-success {
   color: black !important;
+  font-family: rgb(0, 0, 5);
 }
 
 .tituloindex {
@@ -328,11 +329,6 @@ a {
   }
   .containerhistorias {
     display: none;
-  }
-  .napa {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 }
 
