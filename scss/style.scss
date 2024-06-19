@@ -67,23 +67,13 @@ a {
     color: $text-color;
 }
 
-// Navbar
-.navbar-nav {
-   display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: .625rem;
-    font-family: $font-family;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
+.navbar-brand,
+.nav-link,
+.form-control,
+.btn-outline-success {
+  color: black !important;
 }
 
-#navbarNav {
-    display: flex;
-    justify-content: flex-end;
-    gap: .3125rem;
-}
 
 .tituloindex {
     font-family: $font-family;

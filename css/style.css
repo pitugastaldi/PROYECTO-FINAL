@@ -49,21 +49,11 @@ a {
   color: black;
 }
 
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 0.625rem;
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-}
-
-#navbarNav {
-  display: flex;
-  justify-content: flex-end;
-  gap: 0.3125rem;
+.navbar-brand,
+.nav-link,
+.form-control,
+.btn-outline-success {
+  color: black !important;
 }
 
 .tituloindex {
