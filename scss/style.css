@@ -4,15 +4,31 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: x-large;
-  text-align: center;
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
+.titulo-pag {
+  font-size: 3em;
   font-weight: bold;
-  font-style: normal;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  animation: fadeIn 2s ease-in-out, slideIn 1s ease-out;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 header {
   position: fixed;
   top: 0;
@@ -20,13 +36,13 @@ header {
   z-index: 1000;
   padding: 10px 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: rgb(81, 134, 117);
+  background-color: rgb(165, 173, 173);
 }
 
 main {
-  margin-top: 12.5rem;
+  margin-top: 13.5rem;
   padding: 1.25rem;
-  background-image: linear-gradient(to right bottom, #314f36, #426448, #547a5a, #66906d, #79a781, #77a77f, #76a67e, #74a67c, #5e8e65, #48764f, #34603a, #1f4a26);
+  background-image: linear-gradient(to right bottom, #314f36, #426448, #547a5a, #66906d, #79a781, #7bb184, #7eba87, #80c48a, #71c27c, #61bf6e, #50bc60, #3cb950);
 }
 
 .iconoshead {
@@ -253,10 +269,6 @@ a {
   font-style: normal;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-}
-
-.tituloproduc h1 {
-  padding-top: 1.25rem;
 }
 
 .containerhistorias {

@@ -1,5 +1,5 @@
 // Variables
-$primary-color: rgb(81, 134, 117);
+$primary-color: rgb(165, 173, 173);
 $secondary-color: rgb(130, 184, 89);
 $dark-color: rgb(0, 0, 5);
 $text-color: black;
@@ -15,15 +15,32 @@ $font-family: "Teko", sans-serif;
 }
 
 // Typography
-h1 {
-    font-size: x-large;
-    text-align: center;
-    font-family: $font-family;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
+.titulo-pag {
+    font-size: 3em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  animation: fadeIn 2s ease-in-out, slideIn 1s ease-out;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 // Header
 header {
     position: fixed;
@@ -36,10 +53,9 @@ header {
 }
 
 main {
-    margin-top: 12.5rem;
+    margin-top: 13.5rem;
     padding: 1.25rem;
-    background-image: linear-gradient(to right bottom, #314f36, #426448, #547a5a, #66906d, #79a781, #77a77f, #76a67e, #74a67c, #5e8e65, #48764f, #34603a, #1f4a26);    // Icon
-}
+    background-image: linear-gradient(to right bottom, #314f36, #426448, #547a5a, #66906d, #79a781, #7bb184, #7eba87, #80c48a, #71c27c, #61bf6e, #50bc60, #3cb950);}
     .iconoshead {
     display: flex;
     flex-direction: row;
@@ -277,9 +293,6 @@ a {
     padding-right: 2.5rem;
 }
 
-.tituloproduc h1 {
-    padding-top: 1.25rem;
-}
 
 // Container Historias
 .containerhistorias {
