@@ -40,8 +40,8 @@ header {
 }
 
 main {
-  margin-top: 13.5rem;
-  padding: 1.25rem;
+  margin-top: 12.5rem;
+  padding: 1.5rem;
   background-image: linear-gradient(to right bottom, #314f36, #426448, #547a5a, #66906d, #79a781, #7bb184, #7eba87, #80c48a, #71c27c, #61bf6e, #50bc60, #3cb950);
 }
 
@@ -154,7 +154,7 @@ a {
 }
 
 .rectangulo {
-  background-color: rgb(130, 184, 89);
+  background-color: rgb(129, 163, 102);
   border: 2px solid rgb(0, 0, 5);
   font-family: "Teko", sans-serif;
   font-weight: bold;
@@ -183,11 +183,10 @@ a {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1.25rem;
-  font-size: medium;
+  font-size: 25px;
   text-align: center;
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
-  font-weight: bold;
   font-style: normal;
   margin-top: 20px;
 }
@@ -225,6 +224,30 @@ a {
   font-weight: bold;
   font-style: normal;
   margin-left: 10rem;
+}
+
+.button-pgcompras {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button-pgcompras:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+.button-pgcompras:active {
+  background-color: #1e7e34;
+  transform: scale(0.95);
+}
+.button-pgcompras:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5);
 }
 
 .historiabody {

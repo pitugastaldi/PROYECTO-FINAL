@@ -1,6 +1,6 @@
 // Variables
 $primary-color: rgb(165, 173, 173);
-$secondary-color: rgb(130, 184, 89);
+$secondary-color: rgb(129, 163, 102);
 $dark-color: rgb(0, 0, 5);
 $text-color: black;
 $highlight-color: #812814;
@@ -53,8 +53,8 @@ header {
 }
 
 main {
-    margin-top: 13.5rem;
-    padding: 1.25rem;
+    margin-top: 12.5rem;
+    padding: 1.50rem;
     background-image: linear-gradient(to right bottom, #314f36, #426448, #547a5a, #66906d, #79a781, #7bb184, #7eba87, #80c48a, #71c27c, #61bf6e, #50bc60, #3cb950);}
     .iconoshead {
     display: flex;
@@ -201,11 +201,10 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1.25rem;
-    font-size: medium;
+    font-size: 25px;
     text-align: center;
     font-family: $font-family;
     font-optical-sizing: auto;
-    font-weight: bold;
     font-style: normal;
     margin-top: 20px;
 }
@@ -247,6 +246,35 @@ a {
         margin-left: 10rem;
     }
 }
+
+.button-pgcompras {
+    background-color: #28a745; // Fondo verde
+    color: white; // Texto blanco
+    border: none; // Sin borde
+   
+    font-size: 16px; // Tamaño de fuente
+    font-weight: bold; // Texto en negrita
+    border-radius: 5px; // Bordes redondeados
+    cursor: pointer; // Puntero de mano al pasar el ratón
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra
+    transition: background-color 0.3s ease, transform 0.3s ease; // Transiciones para animaciones
+  
+    &:hover {
+      background-color: #218838; // Fondo verde oscuro al pasar el ratón
+      transform: scale(1.05); // Aumenta ligeramente de tamaño
+    }
+  
+    &:active {
+      background-color: #1e7e34; // Fondo verde más oscuro al hacer clic
+      transform: scale(0.95); // Reduce ligeramente de tamaño
+    }
+  
+    &:focus {
+      outline: none; // Sin contorno al enfocar
+      box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5); // Sombra de enfoque
+    }
+  }
+  
 
 // Historia
 .historiabody {
