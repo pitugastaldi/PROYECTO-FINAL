@@ -30,17 +30,62 @@
   }
 }
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: rgb(165, 173, 173);
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 20px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+header .navbar {
+  padding: 1rem 2rem;
+}
+header .navbar .navbar-brand {
+  color: #343a40 !important; /* Dark gray text */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+header .navbar .nav-link {
+  color: #343a40 !important; /* Dark gray text */
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+header .navbar .nav-link:hover, header .navbar .nav-link.active {
+  color: #28a745 !important; /* Green on hover and active */
+}
+header .navbar .navbar-toggler {
+  border-color: #28a745; /* Green border */
+}
+header .navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28256, 87, 34, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Custom icon color */
+}
+@media (max-width: 992px) {
+  header .navbar .navbar-collapse {
+    justify-content: center;
+  }
+  header .navbar .navbar-collapse .nav-item {
+    margin-bottom: 10px;
+  }
+}
+header .Logotipo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Search form styling */
+.form-control {
+  border-radius: 0.25rem;
+  border-color: #ced4da; /* Light gray border */
+}
+
+.btn-outline-success {
+  color: #28a745;
+  border-color: #28a745;
+}
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: #fff;
 }
 
 main {
-  margin-top: 12.5rem;
+  margin-top: 0;
   padding: 1.5rem;
   background-image: linear-gradient(to right bottom, #314f36, #426448, #547a5a, #66906d, #79a781, #7bb184, #7eba87, #80c48a, #71c27c, #61bf6e, #50bc60, #3cb950);
 }
