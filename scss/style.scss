@@ -1,22 +1,15 @@
-// Variables
-$primary-color: rgb(165, 173, 173);
-$secondary-color: rgb(129, 163, 102);
-$dark-color: rgb(0, 0, 5);
-$text-color: black;
-$highlight-color: #812814;
-$hover-color: #942d16;
-$font-family: "Teko", sans-serif;
+@import "./utility/variables";
+@import "./utility/mixin";
+@import "./base/reset";
+@import "./components/navbar";
+@import "./layout/header";
+@import "./layout/main-index";
 
-// Reset
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 // Typography
 .titulo-pag {
-    font-size: 3em;
+  font-size: 3em;
   font-weight: bold;
   color: #333;
   text-align: center;
@@ -41,109 +34,12 @@ $font-family: "Teko", sans-serif;
     transform: translateY(0);
   }
 }
-// Header
-header {
-    background-color: #f8f9fa; /* Light gray background */
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  
-    .navbar {
-      padding: 1rem 2rem;
-  
-      .navbar-brand {
-        color: #343a40 !important; /* Dark gray text */
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-  
-      .nav-link {
-        color: #343a40 !important; /* Dark gray text */
-        font-size: 1rem;
-        margin-right: 1rem;
-  
-        &:hover,
-        &.active {
-          color: #28a745 !important; /* Green on hover and active */
-        }
-      }
-  
-      .navbar-toggler {
-        border-color: #28a745; /* Green border */
-  
-        .navbar-toggler-icon {
-          background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28256, 87, 34, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Custom icon color */
-        }
-      }
-  
-      .navbar-collapse {
-        @media (max-width: 992px) {
-          justify-content: center;
-  
-          .nav-item {
-            margin-bottom: 10px;
-          }
-        }
-      }
-    }
-  
-    .Logotipo img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
-  
-  /* Search form styling */
-  .form-control {
-    border-radius: 0.25rem;
-    border-color: #ced4da; /* Light gray border */
-  }
-  
-  .btn-outline-success {
-    color: #28a745;
-    border-color: #28a745;
-  
-    &:hover {
-      background-color: #28a745;
-      color: #fff;
-    }
-  }
 
-main {
-    margin-top: 0;
-    padding: 1.50rem;
-    background-image: linear-gradient(to right bottom, #314f36, #426448, #547a5a, #66906d, #79a781, #7bb184, #7eba87, #80c48a, #71c27c, #61bf6e, #50bc60, #3cb950);}
-    .iconoshead {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-
-    img {
-        width: 20px;
-        height: 20px;
-    }
-
-    button {
-        padding: 0;
-        border: none;
-        background: none;
-        cursor: pointer;
-    }
-}
-
-// Napa
 
 // Links
 a {
     text-decoration: none;
     color: $text-color;
-}
-
-.navbar-brand,
-.nav-link,
-.form-control,
-.btn-outline-success {
-  color: black !important;
-  font-family: $dark-color;
 }
 
 
@@ -196,25 +92,17 @@ a {
     padding-bottom: 2.5rem;
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    @include grid (repeat(2,1fr),auto auto,center,center,1.25rem);
     grid-template-areas: 
-        "imagenBody imagenBody1"
-        "imagenBody2 imagenBody3";
-    gap: 20px;
-    align-content: center;
-    justify-content: center;
+    "imagenBody imagenBody1"
+    "imagenBody2 imagenBody3";
     font-family: $font-family;
     font-size: x-large;
 }
 
 .imagenBody, .imagenBody1, .imagenBody2, .imagenBody3 {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
+    @include flex (column,none,none,center,1.25rem)
 }
 
 .imagenBody { grid-area: imagenBody; }
@@ -241,22 +129,13 @@ a {
     }
 }
 
-// Icono
-.icono {
-    display: flex;
-    flex-direction: row;
-}
-
 // Container
 .containeraceites {
     gap: 5px;
 }
 
 .bodyaceites {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1.25rem;
+    @include flex (column,wrap,none,none,1.25rem);
     font-size: 25px;
     text-align: center;
     font-family: $font-family;
@@ -266,28 +145,22 @@ a {
 }
 
 .item1, .item2, .item3, .item4 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1.25rem;
+    @include flex(row,none,none,center,1.25rem);
+    
 }
 
 // Compras
 .comprasbody {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex (column,none,none,center,none);
     margin-top: 20px;
 }
 
 .compras1, .compras2, .compras3 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
+    @include flex (row,none,none,center,none);
 
     div {
-        display: flex;
-        align-items: center;
+        @include flex (row,none,none,center,none);
+    
     }
 
     button {
@@ -335,38 +208,7 @@ a {
 // Historia
 .historiabody {
     margin-top: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    justify-content: start;
-    align-content: flex-start;
-}
-
-.bodyproduc {
-    display: flex;
-    flex-direction: column;
-    font-size: medium;
-    text-align: center;
-    font-family: $font-family;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    gap: 1.25rem;
-}
-
-.produc1, .produc2, .produc3 {
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    padding-left: 1.25rem;
-}
-
-.produc3 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-}
-
-.historiabody {
+    @include flex (column,none,start,center,1.25rem);
     font-size: large;
     text-align: center;
     font-family: $font-family;
@@ -377,6 +219,26 @@ a {
     padding-right: 2.5rem;
 }
 
+.bodyproduc {
+    @include flex (column,none,none,none,1.25rem);
+    font-size: medium;
+    text-align: center;
+    font-family: $font-family;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    
+}
+
+.produc1, .produc2, .produc3 {
+    @include flex (none,none,none,center,1.25rem);
+    padding-left: 1.25rem;
+}
+
+.produc3 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
 
 // Container Historias
 .containerhistorias {

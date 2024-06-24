@@ -4,31 +4,14 @@
   box-sizing: border-box;
 }
 
-.titulo-pag {
-  font-size: 3em;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin: 20px 0;
-  animation: fadeIn 2s ease-in-out, slideIn 1s ease-out;
+.navbar-brand,
+.nav-link,
+.form-control,
+.btn-outline-success {
+  color: black !important;
+  font-family: rgb(0, 0, 5);
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes slideIn {
-  0% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 header {
   background-color: #f8f9fa; /* Light gray background */
   padding: 20px 0;
@@ -90,33 +73,34 @@ main {
   background-image: linear-gradient(to right bottom, #314f36, #426448, #547a5a, #66906d, #79a781, #7bb184, #7eba87, #80c48a, #71c27c, #61bf6e, #50bc60, #3cb950);
 }
 
-.iconoshead {
-  display: flex;
-  flex-direction: row;
-  align-content: flex-start;
-}
-.iconoshead img {
-  width: 20px;
-  height: 20px;
-}
-.iconoshead button {
-  padding: 0;
-  border: none;
-  background: none;
-  cursor: pointer;
+.titulo-pag {
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  animation: fadeIn 2s ease-in-out, slideIn 1s ease-out;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 a {
   text-decoration: none;
   color: black;
-}
-
-.navbar-brand,
-.nav-link,
-.form-control,
-.btn-outline-success {
-  color: black !important;
-  font-family: rgb(0, 0, 5);
 }
 
 .tituloindex {
@@ -166,10 +150,10 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
-  grid-template-areas: "imagenBody imagenBody1" "imagenBody2 imagenBody3";
-  gap: 20px;
   align-content: center;
   justify-content: center;
+  gap: 1.25rem;
+  grid-template-areas: "imagenBody imagenBody1" "imagenBody2 imagenBody3";
   font-family: "Teko", sans-serif;
   font-size: x-large;
 }
@@ -178,6 +162,8 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
   gap: 1.25rem;
 }
@@ -214,11 +200,6 @@ a {
   color: rgb(0, 0, 5);
 }
 
-.icono {
-  display: flex;
-  flex-direction: row;
-}
-
 .containeraceites {
   gap: 5px;
 }
@@ -227,6 +208,8 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: none;
+  align-items: none;
   gap: 1.25rem;
   font-size: 25px;
   text-align: center;
@@ -239,6 +222,8 @@ a {
 .item1, .item2, .item3, .item4 {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
   gap: 1.25rem;
 }
@@ -246,18 +231,28 @@ a {
 .comprasbody {
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
+  gap: none;
   margin-top: 20px;
 }
 
 .compras1, .compras2, .compras3 {
   display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
-  margin-bottom: 1rem;
+  gap: none;
 }
 .compras1 div, .compras2 div, .compras3 div {
   display: flex;
+  flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
+  gap: none;
 }
 .compras1 button, .compras2 button, .compras3 button {
   width: 6.25rem;
@@ -299,36 +294,10 @@ a {
   margin-top: 1.25rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  flex-wrap: none;
   justify-content: start;
-  align-content: flex-start;
-}
-
-.bodyproduc {
-  display: flex;
-  flex-direction: column;
-  font-size: medium;
-  text-align: center;
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-  gap: 1.25rem;
-}
-
-.produc1, .produc2, .produc3 {
-  display: flex;
   align-items: center;
   gap: 1.25rem;
-  padding-left: 1.25rem;
-}
-
-.produc3 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.historiabody {
   font-size: large;
   text-align: center;
   font-family: "Teko", sans-serif;
@@ -337,6 +306,36 @@ a {
   font-style: normal;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.bodyproduc {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: 1.25rem;
+  font-size: medium;
+  text-align: center;
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.produc1, .produc2, .produc3 {
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: center;
+  gap: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.produc3 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .containerhistorias {

@@ -1,0 +1,25 @@
+@mixin flex ($direction,$wrap,$justify,$align,$gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap:$wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid ($templecomumn,$templerows,$alig,$justify,$gap){
+    display: grid;
+    grid-template-columns: $templecomumn;
+    grid-template-rows: $templerows;
+    align-content: $alig;
+    justify-content: $justify;
+    gap: $gap;
+}
+
+@mixin front ($ff,$fz,$fw,$color,$ta){
+    font-family: $ff;
+    font-size: $fz;
+    font-weight: $fw;
+    color:$color;
+    text-align: $ta;
+}

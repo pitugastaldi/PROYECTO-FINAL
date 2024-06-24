@@ -1,0 +1,66 @@
+// Header
+header {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  
+    .navbar {
+      padding: 1rem 2rem;
+  
+      .navbar-brand {
+        color: #343a40 !important; /* Dark gray text */
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+  
+      .nav-link {
+        color: #343a40 !important; /* Dark gray text */
+        font-size: 1rem;
+        margin-right: 1rem;
+  
+        &:hover,
+        &.active {
+          color: #28a745 !important; /* Green on hover and active */
+        }
+      }
+  
+      .navbar-toggler {
+        border-color: #28a745; /* Green border */
+  
+        .navbar-toggler-icon {
+          background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28256, 87, 34, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Custom icon color */
+        }
+      }
+  
+      .navbar-collapse {
+        @media (max-width: 992px) {
+          justify-content: center;
+  
+          .nav-item {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  
+    .Logotipo img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Search form styling */
+  .form-control {
+    border-radius: 0.25rem;
+    border-color: #ced4da; /* Light gray border */
+  }
+  
+  .btn-outline-success {
+    color: #28a745;
+    border-color: #28a745;
+  
+    &:hover {
+      background-color: #28a745;
+      color: #fff;
+    }
+  }
