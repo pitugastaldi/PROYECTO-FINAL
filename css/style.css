@@ -375,21 +375,6 @@ a {
     align-content: center;
     justify-content: center;
   }
-  .iconoshead {
-    display: none;
-  }
-  .napa {
-    display: flex;
-    margin-top: 10px;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    font-size: small;
-    text-align: right;
-    font-family: "Teko", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-  }
   main {
     margin-top: 6.25rem;
     padding: 1.25rem;
