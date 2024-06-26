@@ -201,31 +201,74 @@ a {
 }
 
 .containeraceites {
-  gap: 5px;
+  display: grid;
+  gap: 20px;
 }
-
-.bodyaceites {
+.containeraceites .item1, .containeraceites .item2, .containeraceites .item3 {
+  position: relative;
+  padding: 1rem;
+  background-color: rgb(129, 163, 102);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: none;
-  align-items: none;
-  gap: 1.25rem;
-  font-size: 25px;
-  text-align: center;
-  font-family: "Teko", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  margin-top: 20px;
 }
-
-.item1, .item2, .item3, .item4 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: none;
-  justify-content: none;
-  align-items: center;
-  gap: 1.25rem;
+.containeraceites .item1 img, .containeraceites .item2 img, .containeraceites .item3 img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+.containeraceites .item1 p, .containeraceites .item2 p, .containeraceites .item3 p {
+  color: #333;
+  background-color: rgb(129, 163, 102);
+}
+@media (max-width: 768px) {
+  .containeraceites .item1 img, .containeraceites .item2 img, .containeraceites .item3 img {
+    display: none;
+  }
+  .containeraceites .item1 img:after, .containeraceites .item2 img:after, .containeraceites .item3 img:after {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  .containeraceites .item1 .item1:after, .containeraceites .item2 .item1:after, .containeraceites .item3 .item1:after {
+    background-image: url("../assets/segundapagina/WhatsApp Image 2024-05-14 at 12.09.35.jpeg");
+  }
+  .containeraceites .item1 .item2:after, .containeraceites .item2 .item2:after, .containeraceites .item3 .item2:after {
+    background-image: url("../assets/segundapagina/WhatsApp Image 2024-05-14 at 12.09.36.jpeg");
+  }
+  .containeraceites .item1 .item3:after, .containeraceites .item2 .item3:after, .containeraceites .item3 .item3:after {
+    background-image: url("../assets/segundapagina/WhatsApp Image 2024-05-14 at 12.09.36 (1).jpeg");
+  }
+  .containeraceites .item1 p, .containeraceites .item2 p, .containeraceites .item3 p {
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 1;
+    border-radius: 8px;
+  }
+}
+@media (min-width: 769px) {
+  .containeraceites .item1 img, .containeraceites .item2 img, .containeraceites .item3 img {
+    display: block;
+    width: 15%;
+  }
+  .containeraceites .item1 p, .containeraceites .item2 p, .containeraceites .item3 p {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 1rem;
+    background-color: rgb(129, 163, 102);
+    color: #333;
+  }
 }
 
 .comprasbody {

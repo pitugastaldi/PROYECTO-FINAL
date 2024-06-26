@@ -16,10 +16,3 @@
     gap: $gap;
 }
 
-@mixin front ($ff,$fz,$fw,$color,$ta){
-    font-family: $ff;
-    font-size: $fz;
-    font-weight: $fw;
-    color:$color;
-    text-align: $ta;
-}
