@@ -326,6 +326,30 @@ a {
 
 
 // Media Queries
+
+@media (max-width: 769px){
+    .bodyproduc {
+        @include flex (column,none,none,none,1.25rem);
+        font-size: medium;
+        text-align: center;
+        font-family: $font-family;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        
+    }
+    
+    .produc1, .produc2, .produc3 {
+        @include flex (column,none,none,center,1.25rem);
+        padding-left: 1.25rem;
+    }
+    
+    .produc3 {
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+
+}
 @media(max-width: 425px) {
     header {
         display: flex;
