@@ -130,6 +130,15 @@ a {
     }
 }
 
+// .parrafoaceites{
+//     font-family: $font-family;
+//         font-weight: bold;
+//         color: #333;
+//         background-color:$secondary-color;
+//         font-size: 15px;
+
+// }
+
 .containeraceites {
     display: grid;
     gap: 20px;
@@ -138,9 +147,11 @@ a {
         position: relative;
         padding: 1rem;
         background-color:$secondary-color;
+        
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         display: flex;
+        
         img {
             width: 100%;
             height: auto;
@@ -149,11 +160,14 @@ a {
         }
 
         p {
-            
+            font-family: $font-family;
+            font-weight: bold;
             color: #333;
             background-color:$secondary-color;
+            font-size: 20px;
         }
     }
+   
 
     @media (max-width: 768px) {
         .item1, .item2, .item3 {
@@ -326,6 +340,20 @@ a {
 
 
 // Media Queries
+// @media (max-width: 768px) {
+//     .compras1, .compras2, .compras3 {
+        
+//         @include flex(column, none, none, center, none);
+
+//         div {
+//             @include flex(column, none, none, center, none);
+//         }
+
+//         button {
+//             margin-left: 0; // Ajustar el margen si es necesario
+//         }
+//     }
+// }
 
 @media (max-width: 769px){
     .bodyproduc {
@@ -347,6 +375,27 @@ a {
     .produc3 {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
+    }
+
+    .comprasbody{
+        margin-top: 20px;
+    }
+    .compras1, .compras2, .compras3 {
+        margin-top: 15px;
+       
+        
+        @include flex(column, none, none, center, none);
+
+        div {
+            @include flex(column, none, none, center, none);
+            margin-top: 15px;
+            
+        }
+
+        button {
+            margin-top: 20px;
+            margin-left: 0; // Ajustar el margen si es necesario
+        }
     }
 
 }

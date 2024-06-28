@@ -219,8 +219,11 @@ a {
   display: block;
 }
 .containeraceites .item1 p, .containeraceites .item2 p, .containeraceites .item3 p {
+  font-family: "Teko", sans-serif;
+  font-weight: bold;
   color: #333;
   background-color: rgb(129, 163, 102);
+  font-size: 20px;
 }
 @media (max-width: 768px) {
   .containeraceites .item1 img, .containeraceites .item2 img, .containeraceites .item3 img {
@@ -424,6 +427,31 @@ a {
   .produc3 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+  .comprasbody {
+    margin-top: 20px;
+  }
+  .compras1, .compras2, .compras3 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+  }
+  .compras1 div, .compras2 div, .compras3 div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+    margin-top: 15px;
+  }
+  .compras1 button, .compras2 button, .compras3 button {
+    margin-top: 20px;
+    margin-left: 0;
   }
 }
 @media (max-width: 425px) {
