@@ -337,23 +337,32 @@ a {
     }
 }
 
+@media (max-width: 769px) {
+    .navbar-brand {
+      font-size: 1.25rem; // Ajustar tamaño de fuente
+    }
+  
+    .nav-link {
+      font-size: 0.875rem; // Ajustar tamaño de fuente
+      padding: 0.5rem 1rem; // Ajustar padding
+    }
+  
+    .form-control {
+      font-size: 0.875rem; // Ajustar tamaño de fuente
+      padding: 0.25rem 0.5rem; // Ajustar padding
+    }
+  
+    .btn-outline-success {
+      font-size: 0.875rem; // Ajustar tamaño de fuente
+      padding: 0.25rem 0.5rem; // Ajustar padding
+    }
+  
+    .navbar {
+      padding: 0.5rem 1rem; // Ajustar padding de la barra de navegación
+    }
+  }
 
 
-// Media Queries
-// @media (max-width: 768px) {
-//     .compras1, .compras2, .compras3 {
-        
-//         @include flex(column, none, none, center, none);
-
-//         div {
-//             @include flex(column, none, none, center, none);
-//         }
-
-//         button {
-//             margin-left: 0; // Ajustar el margen si es necesario
-//         }
-//     }
-// }
 
 @media (max-width: 769px){
     .bodyproduc {
@@ -394,7 +403,6 @@ a {
 
         button {
             margin-top: 20px;
-            margin-left: 0; // Ajustar el margen si es necesario
         }
     }
 

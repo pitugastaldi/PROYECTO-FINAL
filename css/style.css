@@ -401,6 +401,26 @@ a {
 }
 
 @media (max-width: 769px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+  .nav-link {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+  .form-control {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .btn-outline-success {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+}
+@media (max-width: 769px) {
   .bodyproduc {
     display: flex;
     flex-direction: column;
@@ -451,7 +471,6 @@ a {
   }
   .compras1 button, .compras2 button, .compras3 button {
     margin-top: 20px;
-    margin-left: 0;
   }
 }
 @media (max-width: 425px) {
