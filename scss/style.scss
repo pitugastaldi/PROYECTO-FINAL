@@ -7,9 +7,8 @@
 
 
 
-// Typography
+
 .titulo-pag {
-//   @include font(Teko,3em,bold,#333,center);
   font-size: 3em;
   font-weight: bold;
   color: #333;
@@ -130,14 +129,6 @@ a {
     }
 }
 
-// .parrafoaceites{
-//     font-family: $font-family;
-//         font-weight: bold;
-//         color: #333;
-//         background-color:$secondary-color;
-//         font-size: 15px;
-
-// }
 
 .containeraceites {
     display: grid;
@@ -207,6 +198,7 @@ a {
                 color: #fff;
                 z-index: 1;
                 border-radius: 8px;
+                font-size: 16px;
             }
         }
     }
@@ -225,6 +217,7 @@ a {
                 margin-top: 1rem;
                 background-color:$secondary-color; // No background color for larger screens
                 color: #333; // Text color for larger screens
+                font-size: 16px;
             }
         }
     }
@@ -262,7 +255,8 @@ a {
     background-color: #28a745; // Fondo verde
     color: white; // Texto blanco
     border: none; // Sin borde
-   
+    text-align: center;
+
     font-size: 16px; // Tamaño de fuente
     font-weight: bold; // Texto en negrita
     border-radius: 5px; // Bordes redondeados
@@ -288,18 +282,39 @@ a {
   
 
 // Historia
+
 .historiabody {
-    margin-top: 1.25rem;
-    @include flex (column,none,start,center,1.25rem);
-    font-size: large;
-    text-align: center;
-    font-family: $font-family;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding: 2rem;
+    text-align: justify;
+    
+    .titulo-pag {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .text1, .text2, .text3, .text4 {
+        margin-bottom: 1.5rem;
+
+        p {
+            
+            line-height: 1.5;
+            font-family: $font-family;
+            font-size: 24px;
+        }
+    }
 }
+
+.containerhistorias {
+    margin-top: 2rem;
+
+    .carousel-item img {
+        max-height: 400px; 
+        object-fit: cover;
+    }
+}
+
+
 
 .bodyproduc {
     @include flex (column,none,none,none,1.25rem);
@@ -337,42 +352,62 @@ a {
     }
 }
 
+
+// Media query para pantallas menores a 768px
 @media (max-width: 769px) {
-    .navbar-brand {
-      font-size: 1.25rem; // Ajustar tamaño de fuente
-    }
-  
-    .nav-link {
-      font-size: 0.875rem; // Ajustar tamaño de fuente
-      padding: 0.5rem 1rem; // Ajustar padding
-    }
-  
-    .form-control {
-      font-size: 0.875rem; // Ajustar tamaño de fuente
-      padding: 0.25rem 0.5rem; // Ajustar padding
-    }
-  
-    .btn-outline-success {
-      font-size: 0.875rem; // Ajustar tamaño de fuente
-      padding: 0.25rem 0.5rem; // Ajustar padding
-    }
-  
-    .navbar {
-      padding: 0.5rem 1rem; // Ajustar padding de la barra de navegación
-    }
-  }
+    .historiabody {
+        padding: 1rem;
 
+        .titulo-pag {
+            font-size: 1.5rem; // Ajustar tamaño de fuente
+            margin-bottom: 1rem; // Ajustar margen inferior
+        }
 
+        .text1, .text2, .text3, .text4 {
+            margin-bottom: 1rem; // Ajustar margen inferior
 
-@media (max-width: 769px){
+            p {
+                font-size: 12px; // Ajustar tamaño de fuente
+                line-height: 1.4; // Ajustar interlineado
+                font-family: $font-family;
+                font-weight: bold;
+           
+            }
+        }
+    }
+
+    .containerhistorias {
+        margin-top: 1rem; // Ajustar margen superior
+
+        .carousel-item img {
+            max-height: 200px; // Reducir altura de la imagen
+            object-fit: cover;
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 2rem; // Ajustar tamaño de los controles
+        height: 2rem; // Ajustar tamaño de los controles
+    }
+
+    .titulo-pag{
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin: 20px 0;
+        animation: fadeIn 2s ease-in-out, slideIn 1s ease-out;
+    }
     .bodyproduc {
         @include flex (column,none,none,none,1.25rem);
         font-size: medium;
-        text-align: center;
+        text-align: justify;
         font-family: $font-family;
         font-optical-sizing: auto;
         font-weight: bold;
         font-style: normal;
+
         
     }
     
@@ -391,34 +426,26 @@ a {
     }
     .compras1, .compras2, .compras3 {
         margin-top: 15px;
-       
-        
         @include flex(column, none, none, center, none);
 
         div {
-            @include flex(column, none, none, center, none);
+            @include flex(column, none,none, center, none);
             margin-top: 15px;
             
         }
 
         button {
+          
             margin-top: 20px;
+            text-align: center;
+            
         }
     }
 
 }
-@media(max-width: 425px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        height: 6.25rem;
-        z-index: 1000;
-    }
 
+@media(max-width: 425px) {
+    
     .PartePrincipal {
         padding-top: 1.25rem;
         padding-bottom: 2.5rem;
@@ -430,11 +457,10 @@ a {
         justify-content: center;
     }
 
-    
-    main {
-        margin-top: 6.25rem;
-        padding: 1.25rem;
+    .rectangulo1{
+        display: none;
     }
+  
 }
 
 @media(max-width: 320px) {
@@ -448,9 +474,6 @@ a {
         display: none;
     }
 
-    .rectangulo {
-        display: none;
-    }
 
     .containerhistorias {
         display: none;
