@@ -311,7 +311,7 @@ a {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
-  margin-left: 10rem;
+  margin-left: 1.875rem;
 }
 
 .button-pgcompras {
@@ -473,26 +473,34 @@ a {
   }
   .comprasbody {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: none;
+    align-items: center;
+    gap: none;
+    padding: 1rem;
   }
   .compras1, .compras2, .compras3 {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: none;
-    justify-content: none;
+    justify-content: center;
     align-items: center;
     gap: none;
   }
   .compras1 div, .compras2 div, .compras3 div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: none;
-    justify-content: none;
+    justify-content: center;
     align-items: center;
     gap: none;
     margin-top: 15px;
   }
   .compras1 button, .compras2 button, .compras3 button {
+    margin-left: 0;
     margin-top: 20px;
     text-align: center;
   }
@@ -511,18 +519,59 @@ a {
   .rectangulo1 {
     display: none;
   }
+  .compras1, .compras2, .compras3 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+  }
+  .compras1 div, .compras2 div, .compras3 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    margin-top: 15px;
+  }
+  .compras1 button, .compras2 button, .compras3 button {
+    margin-left: 0%;
+    margin-top: 20px;
+    text-align: center;
+  }
 }
 @media (max-width: 320px) {
-  .compras1 button, .compras2 button, .compras3 button {
-    width: 5.25rem;
-    height: 1.5rem;
-    margin-left: 5rem;
-  }
   .rectangulo1 {
     display: none;
   }
   .containerhistorias {
     display: none;
+  }
+  .compras1, .compras2, .compras3 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+  }
+  .compras1 div, .compras2 div, .compras3 div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    margin-top: 15px;
+  }
+  .compras1 button, .compras2 button, .compras3 button {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
   }
 }
 
