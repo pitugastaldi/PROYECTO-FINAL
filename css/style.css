@@ -357,14 +357,6 @@ a {
   font-size: 24px;
 }
 
-.containerhistorias {
-  margin-top: 2rem;
-}
-.containerhistorias .carousel-item img {
-  max-height: 400px;
-  object-fit: cover;
-}
-
 .bodyproduc {
   display: flex;
   flex-direction: column;
@@ -373,7 +365,7 @@ a {
   align-items: none;
   gap: 1.25rem;
   font-size: medium;
-  text-align: center;
+  text-align: justify;
   font-family: "Teko", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
@@ -399,6 +391,10 @@ a {
   width: 25.5rem;
   height: 25.5rem;
   margin-top: 60px;
+}
+.containerhistorias .carousel-item img {
+  max-height: 400px;
+  object-fit: cover;
 }
 @media (max-width: 768px) and (orientation: landscape) {
   .containerhistorias {
