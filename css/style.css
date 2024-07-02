@@ -208,6 +208,7 @@ a {
   position: relative;
   padding: 1rem;
   background-color: rgb(129, 163, 102);
+  text-align: justify;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -303,7 +304,7 @@ a {
   gap: none;
 }
 .compras1 button, .compras2 button, .compras3 button {
-  width: 6.25rem;
+  width: 200px;
   height: 2.5rem;
   font-size: medium;
   text-align: center;
@@ -339,6 +340,58 @@ a {
   box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5);
 }
 
+.table-responsive {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+}
+.table th, .table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+  .table th, .table td {
+    padding: 10px;
+  }
+  .table th {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .table {
+    font-size: 12px;
+  }
+  .table th, .table td {
+    padding: 8px;
+  }
+  .table th {
+    font-size: 12px;
+  }
+}
 .historiabody {
   padding: 2rem;
   text-align: justify;
@@ -503,6 +556,39 @@ a {
     margin-left: 0;
     margin-top: 20px;
     text-align: center;
+  }
+  .item1 img, .item2 img, .item3 img {
+    display: none;
+  }
+  .item1 img:after, .item2 img:after, .item3 img:after {
+    content: "";
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  .item1 .item1:after, .item2 .item1:after, .item3 .item1:after {
+    background-image: url("../assets/segundapagina/WhatsApp Image 2024-05-14 at 12.09.35.jpeg");
+  }
+  .item1 .item2:after, .item2 .item2:after, .item3 .item2:after {
+    background-image: url("../assets/segundapagina/WhatsApp Image 2024-05-14 at 12.09.36.jpeg");
+  }
+  .item1 .item3:after, .item2 .item3:after, .item3 .item3:after {
+    background-image: url("../assets/segundapagina/WhatsApp Image 2024-05-14 at 12.09.36 (1).jpeg");
+  }
+  .item1 p, .item2 p, .item3 p {
+    position: relative;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    z-index: 1;
+    border-radius: 8px;
+    font-size: 16px;
   }
 }
 @media (max-width: 425px) {
