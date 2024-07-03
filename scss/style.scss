@@ -163,7 +163,7 @@ a {
     @media (max-width: 768px) {
         .item1, .item2, .item3 {
             img {
-                display: none; // Hide the image
+                display: none; 
 
                 &:after {
                     content: "";
@@ -175,7 +175,7 @@ a {
                     width: 100%;
                     height: 100%;
                     z-index: -1;
-                    opacity: 0.5; // Adjust opacity as needed
+                    opacity: 0.5; 
                 }
             }
 
@@ -206,8 +206,8 @@ a {
     @media (min-width: 769px) {
         .item1, .item2, .item3 {
             img {
-                display: block; // Show the image
-                width: 15%; // Adjust the width as needed
+                display: block; 
+                width: 15%; 
             }
 
             p {
@@ -215,8 +215,8 @@ a {
                 align-items: center;
                 padding-left: 20px;
                 margin-top: 1rem;
-                background-color:$secondary-color; // No background color for larger screens
-                color: #333; // Text color for larger screens
+                background-color:$secondary-color; 
+                color: #333; 
                 font-size: 16px;
             }
         }
@@ -252,31 +252,31 @@ a {
 }
 
 .button-pgcompras {
-    background-color: #28a745; // Fondo verde
-    color: white; // Texto blanco
-    border: none; // Sin borde
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
     text-align: center;
 
-    font-size: 16px; // Tamaño de fuente
-    font-weight: bold; // Texto en negrita
-    border-radius: 5px; // Bordes redondeados
-    cursor: pointer; // Puntero de mano al pasar el ratón
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Sombra
-    transition: background-color 0.3s ease, transform 0.3s ease; // Transiciones para animaciones
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
   
     &:hover {
-      background-color: #218838; // Fondo verde oscuro al pasar el ratón
-      transform: scale(1.05); // Aumenta ligeramente de tamaño
+      background-color: #218838; 
+      transform: scale(1.05); 
     }
   
     &:active {
-      background-color: #1e7e34; // Fondo verde más oscuro al hacer clic
-      transform: scale(0.95); // Reduce ligeramente de tamaño
+      background-color: #1e7e34; 
+      transform: scale(0.95); 
     }
   
     &:focus {
-      outline: none; // Sin contorno al enfocar
-      box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5); // Sombra de enfoque
+      outline: none; 
+      box-shadow: 0 0 0 3px rgba(72, 180, 97, 0.5); 
     }
   }
   
@@ -415,16 +415,16 @@ a {
         padding: 1rem;
 
         .titulo-pag {
-            font-size: 1.5rem; // Ajustar tamaño de fuente
-            margin-bottom: 1rem; // Ajustar margen inferior
+            font-size: 1.5rem; 
+            margin-bottom: 1rem; 
         }
 
         .text1, .text2, .text3, .text4 {
-            margin-bottom: 1rem; // Ajustar margen inferior
+            margin-bottom: 1rem; 
 
             p {
-                font-size: 12px; // Ajustar tamaño de fuente
-                line-height: 1.4; // Ajustar interlineado
+                font-size: 12px; 
+                line-height: 1.4; 
                 font-family: $font-family;
                 font-weight: bold;
            
@@ -504,7 +504,7 @@ a {
     }
     .item1, .item2, .item3 {
         img {
-            display: none; // Hide the image
+            display: none;
 
             &:after {
                 content: "";
@@ -516,7 +516,7 @@ a {
                 width: 100%;
                 height: 100%;
                 z-index: -1;
-                opacity: 0.5; // Adjust opacity as needed
+                opacity: 0.5; 
             }
         }
 
