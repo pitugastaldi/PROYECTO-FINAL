@@ -156,6 +156,7 @@ a {
   grid-template-areas: "imagenBody imagenBody1" "imagenBody2 imagenBody3";
   font-family: "Teko", sans-serif;
   font-size: x-large;
+  text-align: justify;
 }
 
 .imagenBody, .imagenBody1, .imagenBody2, .imagenBody3 {
@@ -258,7 +259,7 @@ a {
     color: #fff;
     z-index: 1;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media (min-width: 769px) {
