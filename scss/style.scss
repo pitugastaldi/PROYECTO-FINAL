@@ -234,13 +234,13 @@ a {
     height: 370px;
     margin-top: auto;
     margin-bottom: auto;
-    width: 400px;
+    width: 320px;
     background-color: rgba(0, 0, 0, 0.5) !important;
   }
   
   .social_icon {
     span {
-      font-size: 60px;
+      font-size: 45px;
       margin-left: 10px;
       color:black;
   
@@ -283,6 +283,8 @@ a {
       margin-left: 15px;
       margin-right: 15px;
     }
+
+   
   }
   
   .login_btn {
@@ -303,6 +305,7 @@ a {
       margin-left: 4px;
     }
   }
+
 
 // Compras
 .comprasbody {
@@ -493,6 +496,35 @@ a {
 
 // Media query para pantallas menores a 768px
 @media (max-width: 769px) {
+    .card {
+        width: 90%;
+    }
+
+    .social_icon span {
+        
+        display: none;
+    }
+
+    .card-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .input-group-prepend span {
+        width: 40px;
+    }
+
+    .input-group-text {
+        font-size: 1rem;
+    }
+
+    .login_btn {
+        width: 100%;
+    }
+    
+    
+    
+    
+    
     .historiabody {
         padding: 1rem;
 
@@ -665,7 +697,9 @@ a {
 }
 
 @media(max-width: 320px) {
-    
+    .social_icon {
+        display: none;
+        }
 
     .rectangulo1 {
         display: none;
