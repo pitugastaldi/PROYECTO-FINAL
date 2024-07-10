@@ -312,7 +312,7 @@ a {
 
 .input-group-prepend span {
   width: 50px;
-  background-color: #942d16;
+  background-color: #28a745;
   color: black;
   border: 0 !important;
   margin: 10px;
@@ -337,7 +337,7 @@ input:focus {
 
 .login_btn {
   color: black;
-  background-color: #942d16;
+  background-color: #28a745;
   width: 100px;
 }
 .login_btn:hover {
