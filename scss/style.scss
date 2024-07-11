@@ -157,7 +157,7 @@ a {
             font-weight: bold;
             color: #333;
             background-color:$secondary-color;
-            font-size: 20px;
+            font-size: 50px;
         }
     }
    
@@ -200,7 +200,7 @@ a {
                 color: #fff;
                 z-index: 1;
                 border-radius: 8px;
-                font-size: 20px;
+                font-size: 25px;
             }
         }
     }
@@ -219,7 +219,7 @@ a {
                 margin-top: 1rem;
                 background-color:$secondary-color; 
                 color: #333; 
-                font-size: 16px;
+                font-size: 20px;
             }
         }
     }
@@ -251,8 +251,10 @@ a {
     }
   
     position: absolute;
-    right: 20px;
-    top: -45px;
+    right: 25px;
+    // top: -10px;
+    bottom: 60px;
+    
   }
   
   .card-header h3 {
@@ -443,10 +445,12 @@ a {
         margin-bottom: 1.5rem;
 
         p {
-            
-            line-height: 1.5;
             font-family: $font-family;
-            font-size: 24px;
+            font-size: x-large;
+            text-align: justify;
+            // line-height: 1.5;
+            // font-family: $font-family;
+            // font-size: 24px;
         }
     }
 }
@@ -454,7 +458,7 @@ a {
 //produccion//
 .bodyproduc {
     @include flex (column,none,none,none,1.25rem);
-    font-size: medium;
+    font-size: 16px;
     text-align: justify;
     font-family: $font-family;
     font-optical-sizing: auto;
@@ -521,10 +525,8 @@ a {
         width: 100%;
     }
     
-    
-    
-    
-    
+    //historia//
+
     .historiabody {
         padding: 1rem;
 
@@ -537,10 +539,10 @@ a {
             margin-bottom: 1rem; 
 
             p {
-                font-size: 18px; 
+                font-size: 10px; 
                 line-height: 1.4; 
                 font-family: $font-family;
-                font-weight: bold;
+                
            
             }
         }
@@ -571,11 +573,11 @@ a {
     }
     .bodyproduc {
         @include flex (column,none,none,none,1.25rem);
-        font-size: medium;
+        font-size: 14px;
         text-align: justify;
         font-family: $font-family;
         font-optical-sizing: auto;
-        font-weight: bold;
+        // font-weight: bold;
         font-style: normal;
 
         
