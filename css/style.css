@@ -565,7 +565,7 @@ input:focus {
     margin-bottom: 1rem;
   }
   .historiabody .text1 p, .historiabody .text2 p, .historiabody .text3 p, .historiabody .text4 p {
-    font-size: 10px;
+    font-size: 20px;
     line-height: 1.4;
     font-family: "Teko", sans-serif;
   }
